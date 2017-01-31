@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: arial;
+  background-image: url("../images/fond.jpg");
 }
 header,
 footer {
@@ -73,40 +74,40 @@ main section article {
   font-size: 250px;
 }
 main .globale:nth-child(even) {
-  background-color: #ffc153;
+  background-color: rgba(255, 193, 83, 0.7);
 }
 main .globale:nth-child(even) section article:nth-child(1) {
-  background-color: #ffc153;
+  background-color: rgba(255, 193, 83, 0.7);
 }
 main .globale:nth-child(even) section article:nth-child(2) {
-  background-color: #462446;
+  background-color: rgba(70, 36, 70, 0.7);
 }
 main .globale:nth-child(even) section article:nth-child(3) {
-  background-color: #b05f6d;
+  background-color: rgba(176, 95, 109, 0.7);
 }
 main .globale:nth-child(even) section article:nth-child(4) {
-  background-color: #eb6b56;
+  background-color: rgba(235, 107, 86, 0.7);
 }
 main .globale:nth-child(even) section article:nth-child(5) {
-  background-color: #ffc153;
+  background-color: rgba(255, 193, 83, 0.7);
 }
 main .globale:nth-child(odd) {
-  background-color: #47b39d;
+  background-color: rgba(71, 179, 157, 0.7);
 }
 main .globale:nth-child(odd) section article:nth-child(1) {
-  background-color: #47b39d;
+  background-color: rgba(71, 179, 157, 0.7);
 }
 main .globale:nth-child(odd) section article:nth-child(2) {
-  background-color: #b05f6d;
+  background-color: rgba(176, 95, 109, 0.7);
 }
 main .globale:nth-child(odd) section article:nth-child(3) {
-  background-color: #eb6b56;
+  background-color: rgba(235, 107, 86, 0.7);
 }
 main .globale:nth-child(odd) section article:nth-child(4) {
-  background-color: #ffc153;
+  background-color: rgba(255, 193, 83, 0.7);
 }
 main .globale:nth-child(odd) section article:nth-child(5) {
-  background-color: #47b39d;
+  background-color: rgba(71, 179, 157, 0.7);
 }
 .globale {
   width: 100%;

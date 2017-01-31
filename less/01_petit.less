@@ -23,9 +23,13 @@
 
 
 
-@couleur-8  : mix(@couleur-base, @triadic-1);
-@couleur-9  : mix(@couleur-base, @triadic-2);
-@couleur-10 : mix(@couleur-base, @couleur-complementaire);
+@couleur-8  : rgba(176, 95, 109, 0.7);
+@couleur-9  : rgba(235, 107, 86, 0.7);
+@couleur-10 : rgba(255, 193, 83, 0.7);
+@couleur-11 : rgba(70, 36, 70, 0.7);
+@couleur-12 : rgba(71, 179, 157, 0.7);
+
+
 
 
 
@@ -37,17 +41,16 @@
 
 
 
-
-
-
 body{
   display : flex;
   flex-direction: column;
   font-family: arial;
+  background-image: url("../images/fond.jpg");
 }
 
 header, footer {
     background-color : @couleur-contrast ;
+    width: 960px;
 }
 header{
   display: flex;
@@ -95,36 +98,64 @@ header{
       } // fin nav
     } // fin header  
 
-main{
+main {
     display:flex;
     flex-direction:column;
+
     section{
       display:flex;
       flex-direction:column;
       justify-content:center;
       align-items:center;
+      width: 100%;
       article{
         display:flex;
         justify-content:center;
         width:100%;
         align-items: center;
         height : @largeur_article;
-       // border: 1px solid #aaa;
+        //border: 1px solid #aaa;
         font-size: @largeur_article;
       }
-
-      &.premier {
-          article:nth-child(1) {background-color: @couleur-base;}
-          article:nth-child(2) {background-color: @triadic-1;}
-          article:nth-child(3) {background-color: @triadic-2;}
-      }
-      &.deuxieme {
-          article:nth-child(1) {background-color: @couleur-8;}
-          article:nth-child(2) {background-color: @couleur-9;}
-          article:nth-child(3) {background-color: @couleur-10;}
-      }
     }
+
+    .globale:nth-child(even) {
+      background-color: @couleur-10;
+        section{
+          article:nth-child(1) {background-color: @couleur-10;}
+          article:nth-child(2) {background-color: @couleur-11;}
+          article:nth-child(3) {background-color: @couleur-8;}
+          article:nth-child(4) {background-color: @couleur-9;}
+          article:nth-child(5) {background-color: @couleur-10;}
+        }    
+      }
+     .globale:nth-child(odd) {
+      background-color: @couleur-12;
+       section{
+            article:nth-child(1) {background-color: @couleur-12;}
+            article:nth-child(2) {background-color: @couleur-8;}
+            article:nth-child(3) {background-color: @couleur-9;}
+            article:nth-child(4) {background-color: @couleur-10;}
+            article:nth-child(5) {background-color: @couleur-12;}
+        }
+      }
 }
+
+.globale{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+body > .globale:first-child{
+  background-color: black;
+}
+
+body > .globale:last-child{
+  background-color: black;
+}
+
 
 footer{
   height: 70px;
